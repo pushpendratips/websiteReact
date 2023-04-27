@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className='conatiner text-center top'>
-          {/* <div className='img'>
-            <img src={logo1} alt='' />
-          </div> */}
+        <div className='conatiner text-center top'>        
           <p>© 2023. All rights reserved by Pushpendra Tripathi.</p>
         </div>
       </footer>
