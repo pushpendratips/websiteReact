@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "./Header.css";
-import close from "../pic/close.png";
 const Header = () => {
   // fixed Header
   window.addEventListener("scroll", function () {
@@ -14,13 +13,11 @@ const Header = () => {
       <header className='header'>
         <div className='container d_flex'>
           <div className='logo'>
-            {/* <img src={logo} alt='' /> */}
-           <h2 style={{color:"#000", fontSize:"34px"}}> Pushpendra Technical Tips</h2>
+          <h2 style={{color:"#000", fontSize:"34px"}}> Pushpendra Tips</h2>
           </div>
 
           <div className='navlink'>
-            <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
-              {/*<ul className='link f_flex uppercase {Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}'>*/}
+            <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>            
               <li>
                 <a href='#home'>home</a>
               </li>
