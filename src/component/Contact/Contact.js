@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import contact1 from "./contact1.jpg"
 import "./Contact.css"
-
+import linkedin from "../pic/linkedin.png";
+import twitter from "../pic/twitter.png"
 const Contact = () => {
   const [data, setData] = useState({
     fullname: "",
@@ -55,10 +56,10 @@ const Contact = () => {
                   <div className='button f_flex'>
                     
                     <button className='btn_shadow'>
-                      <i className='fab fa-instagram'></i>
+                    <img src={linkedin} width="50px" height="50"/>
                     </button>
                     <button className='btn_shadow'>
-                      <i className='fab fa-twitter'></i>
+                    <img src={twitter} width="50px" height="50"/>
                     </button>
                   </div>
                 </div>

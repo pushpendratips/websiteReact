@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import "./Header.css"
+import "./Header.css";
+import close from "../pic/close.png";
 const Header = () => {
   // fixed Header
   window.addEventListener("scroll", function () {
@@ -32,7 +33,7 @@ const Header = () => {
             </ul>
 
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
-              {Mobile ? <i className='fas fa-times close home-btn'></i> : <i className='fas fa-bars open'></i>}
+              {Mobile ? <i className='close home-btn'>close</i> : <p class="open">open</p>}
             </button>
           </div>
         </div>
